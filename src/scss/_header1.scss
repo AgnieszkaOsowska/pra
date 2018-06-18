@@ -1,0 +1,29 @@
+.head{
+    position: absolute;
+    z-index: 200;
+    width: 100%;
+
+    
+    &__logo{
+        display: block;
+        float: left;
+    }
+    &__nav{
+
+        float: left;
+        margin-top: $base-unit * 2.5;
+        
+
+        &__ul{
+
+            &__li{
+                display: inline;
+                color: $color-1;
+            }
+        }
+
+       
+        
+
+    }
+}

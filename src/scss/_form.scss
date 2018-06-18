@@ -1,0 +1,69 @@
+.form{
+    &__cont{
+
+        &__head{
+
+            &__text{
+                float: left;
+            }
+        }
+
+        &__btn{
+            height: $base-unit * 2.5;
+            margin-top: $base-unit * 5;
+            margin-bottom: $base-unit * 3.75;
+            float: right;
+            font-size: $p-font-size;
+
+        }
+
+        &__text{
+            clear: both;
+            margin-bottom: $base-unit * 3.125;
+            @include width;
+           
+        }
+
+        &__form{
+            position: relative;
+            @include width;
+        
+
+            &__text{
+                font-size: $base-unit *2;
+                margin-bottom: $base-unit * 2.1875;
+            }
+
+            &__in{
+                border: none;
+                border-bottom: 1px dashed $color-form;
+
+                &:focus{
+                    border: none;
+                } 
+            }
+
+            &__ch{
+                margin-right: $base-unit;
+            }
+
+            &__btn{
+                height: $base-unit * 2.5;
+                font-size: $p-font-size;
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                margin-bottom: $base-unit * 5;
+            }
+        }
+    }
+}
+
+.flaticon-download, .flaticon-next, .flaticon-up-arrow-1{
+    padding-left: $base-unit;
+    padding-right: $base-unit;
+}
+.p--form{
+    font-size: $base-unit * 1.125;
+    margin-bottom: $base-unit * 3.75;
+}

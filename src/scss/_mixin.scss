@@ -1,0 +1,5 @@
+@mixin width{
+    max-width: $base-unit * 47.1875;
+    margin-left: $base-unit * 6.25;
+    margin-right:  $base-unit * 6.25;
+}

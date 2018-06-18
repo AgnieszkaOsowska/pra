@@ -1,0 +1,30 @@
+.mission{
+    .wrapper{
+        position: relative;
+        padding-bottom: $base-unit * 10;
+    }
+    &__cont{
+        max-height: $base-unit * 34.375;
+        overflow: hidden;
+        
+        .quotes{
+            height: 100%;
+            float: left;
+
+            .q{
+                width: $base-unit * 6.125;
+                text-align: right;
+                font-family: 'Mada', sans-serif;
+                font-weight: 900;
+                font-size: $base-unit * 3.875;
+            }
+        }
+        
+        .text{
+            height: 100%;
+            @include width;
+        }
+      
+
+    }
+} 

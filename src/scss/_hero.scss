@@ -1,0 +1,57 @@
+.hero{
+    height: $base-unit * 40.625;
+    background-image: url("/img/head_foto.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+
+    &:after {  
+        content: "";
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: repeating-linear-gradient(-45deg, black, black 0.5px, transparent 0.5px, transparent 3px);   // do poprawki
+        opacity: 0.3;
+        background-size: 100%;
+    }
+
+   &:before {
+        content: "";
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: 
+        linear-gradient(140deg, #10181e 15%, #2e9d16 65%, #eaae13);
+       opacity: 0.8;
+        background-size: 100%;
+    }
+    
+    @media (min-width: 1365px){
+        background-size: 100% 100%;
+    }
+
+    &__cont{
+      
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+
+        .h1{
+            color: white;
+        }
+
+        .h1--col{
+            color: $color-4;
+        }
+
+        
+    }
+}

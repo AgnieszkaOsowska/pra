@@ -1,0 +1,66 @@
+.mission{
+    &__aside{
+        width: $base-unit * 6.875;
+        height: $base-unit * 34.375;
+        position: absolute;
+        left: 91%;
+        text-align: center;
+        top: 0;
+        .number{
+            height: $base-unit * 15.625;
+            .n{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                padding-top: $base-unit * 12.5;
+                font-size: $base-unit * 1.1875;
+
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    position: absolute;
+                    bottom: -($base-unit * 2.1825);
+                    background-color: #efc73c;
+                }
+            }
+        }
+        &__arrows{
+            height: $base-unit * 18.75;
+            width: 100%;
+           position: absolute;
+          top: $base-unit * 24.0625;
+          
+            .flaticon-down-arrow:before{
+                content: "";
+                    display: block;
+                    width: 100%;
+                    height: 1px;
+                    position: absolute;
+                   // bottom: -($base-unit * 2.1825);
+                    background-color: #efc73c;
+            }
+
+            
+        }
+        &__arrows__up, &__arrows__down{
+            background-color: white;
+            border: none;
+            display: block;
+            float: left;
+            font-size: $base-unit * 1.1875;
+            margin: 0 auto;
+        
+        }
+      
+        &__arrows__down{
+            clear: left;
+
+            
+          
+        }
+   
+
+    } 
+}

@@ -1,0 +1,132 @@
+.head{
+    height: $base-unit * 40.625;
+    background-image: url("/img/head_foto.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+
+    &:after {  
+        content: "";
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: repeating-linear-gradient(-45deg, black, black 0.5px, transparent 0.5px, transparent 3px);   // do poprawki
+        opacity: 0.3;
+        background-size: 100%;
+    }
+
+   &:before {
+        content: "";
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: 
+        linear-gradient(140deg, #10181e 15%, #2e9d16 65%, #eaae13);
+       opacity: 0.8;
+        background-size: 100%;
+    }
+    
+    @media (min-width: 1365px){
+        background-size: 100% 100%;
+    }
+
+   
+
+
+    &__logo{
+        display: block;
+        float: left;
+    }
+    &__nav{
+
+        float: left;
+        
+
+        &__ul{
+
+            &__li{
+                display: inline;
+                color: $color-1;
+            }
+        }
+
+       
+        
+
+    }
+
+
+
+    &__cont{
+      
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+
+        .h1{
+            color: white;
+        }
+
+        .h1--col{
+            color: $color-4;
+        }
+
+        
+    }
+
+    &__cookie{
+        width: $base-unit * 84.375;
+        height: $base-unit * 6.5625;
+        background-color: $color-3;
+        position: absolute;
+        top: 100%;
+        transform: translateY(-100%);
+        z-index: 30;
+        opacity: 0.8;
+        
+        &__cont{
+            float: left;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+           &__img{
+               width: $base-unit * 4.375;
+               margin-right: $base-unit * 1.875;
+               float: left;
+           }
+
+           &__p{
+               width: $base-unit * 42.8125;
+               font-size: $base-unit * 0.875;
+               line-height: $base-unit * 1.1875;
+               color: $color-1;
+               margin-right: $base-unit * 4.375;
+               float: left;
+           }
+
+           &__btn{
+                width: $base-unit * 6.25;
+                float: left;
+
+               
+           }
+        }
+
+    }
+  
+}
+
+
+.flaticon-cross-out{
+    margin-left: $base-unit * 0.75;
+    font-size: 10px;
+}

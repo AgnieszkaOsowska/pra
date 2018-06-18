@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h1, .h1{
+    font-size: $h1-font-size;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: $base-unit * 3.75;
+}
+h2, .h2{
+    font-size: $h2-font-size;
+    letter-spacing: 0;
+    margin: 0 auto;
+    margin-top: $base-unit * 5;
+    font-family: 'Homenaje', sans-serif;
+    text-align: center;
+    padding-bottom: $base-unit;
+}
+
+.p{
+    font-family: 'Mada', sans-serif;
+    font-weight: 300;
+    font-size: $p-font-size;
+    line-height: $base-unit * 2.5; 
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding-right: $base-unit * 13.125;
+    padding-left: $base-unit * 13.125;
+    max-width: $base-unit * 84.375;
+}
+
+.btn{
+    background-color: $color-2;
+    color: $color-1;
+    border: 1px solid $color-2;
+    font-family: 'Homenaje', sans-serif;
+    border-radius: 2px;
+}
